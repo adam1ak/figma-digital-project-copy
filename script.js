@@ -4,7 +4,7 @@ var header = document.querySelector('header');
 // Add scroll event listener to window
 window.addEventListener('scroll', function() {
     // Check if scrolled down
-    if (window.scrollY > 80) {
+    if (window.scrollY > 50) {
         // Add 'scrolled' class to header
         header.classList.add('scrolled');
     } else {
@@ -17,12 +17,14 @@ var bgHide = document.querySelector('.background-hide');
 var mainElement = document.querySelector('main');
 var burger = document.querySelector('.burger');
 var hedear = document.querySelector('header');
+var body = document.querySelector('body');
 document.querySelector('.burger-click').addEventListener('click', function() {
     navbar.classList.toggle('show');
     mainElement.classList.toggle('blur');
     bgHide.classList.toggle('show');
     burger.classList.toggle('show');
     header.style.position = 'static';
+    body.style.overflow = 'hidden';
 });
 document.querySelector('.background-hide').addEventListener('click', function() {
     console.log('click');
@@ -31,4 +33,5 @@ document.querySelector('.background-hide').addEventListener('click', function() 
     bgHide.classList.remove('show');
     burger.classList.remove('show');
     header.style.position = 'sticky';
+    body.style.overflow = 'visible';
 });
