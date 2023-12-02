@@ -27,7 +27,7 @@ header{
     padding-bottom: 1rem;
 }
 
-/* ===== about section ===== */
+
 section.about-container{
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -89,10 +89,8 @@ section div.about-info p{
     padding: 1em;
     width: max-content;
 }
-/* ===== end of about section ===== */
 
 
-/* ===== our focus section ===== */
 section.our-focus-container{
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -159,7 +157,8 @@ section div.second-mission i:nth-of-type(2){
     letter-spacing: 2px;
     line-height: 1.1em;
 }
-/* ===== end of our focus section ===== */
+
+
 header.scrolled {
     background-color: #FEFEFA;
     padding-top: 1em;
