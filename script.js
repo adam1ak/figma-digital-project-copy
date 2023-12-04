@@ -6,17 +6,17 @@ var hedear = document.querySelector('header');
 var body = document.querySelector('body');
 var header = document.querySelector('header');
 
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-            header.style.filter = "blur(5px)";
-            mainElement.classList.toggle('blur')
-            body.style.overflow = 'hidden';
-        },
-        750
-    )
-});
+// window.addEventListener("load", function(){
+//     setTimeout(
+//         function open(event){
+//             document.querySelector(".popup").style.display = "block";
+//             header.style.filter = "blur(5px)";
+//             mainElement.classList.toggle('blur');
+//             body.style.overflow = 'hidden';
+//         },
+//         750
+//     )
+// });
 
 
 document.querySelector("#popup-close").addEventListener("click", function(){

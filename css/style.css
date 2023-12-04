@@ -12,6 +12,7 @@ body{
     font-size: clamp(0.5rem, 1.5vw, 1rem);
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -31,9 +32,9 @@ header{
 }
 
 .popup{
-    z-index: 10003;
+    z-index: 999999;
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -217,11 +218,13 @@ section.our-projects-container{
     justify-content: center;
 }
 section div.our-projects{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     width: 75%;
     min-height: 25svh;
     font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
 }
 section div.our-project-header{
     display: flex;
@@ -268,6 +271,18 @@ section div.bottom-images img:nth-of-type(2){
 section div.bottom-images img:nth-of-type(3){
     max-width: 30%;
 }
+@keyframes slide-image{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+section div.our-infinity-slider{
+    display: none;
+}
+
 
 section.contact-container{
     margin-top: 7rem;
@@ -663,6 +678,9 @@ main{
     .header-text i{
         font-size: 0.9em;
     }
+    section div.about-images img{
+        max-width: 15rem;
+    }
 }
 @media (max-width: 1024px){
     main{
@@ -716,6 +734,38 @@ main{
     .room-preview img{
         max-width: 100%;
         max-height: 70svh;
+    }
+    section div.about{
+        justify-content: center;
+        width: 65%;
+    }
+    section div.about-images{
+        display: none;
+    }
+    section div.missions{
+        flex-direction: column;
+        text-wrap: wrap;
+    }
+    section div.first-mission, section div.second-mission{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    section div.our-projects{
+        display: block;
+    }
+    section div.our-project-images{
+        display: none;
+    }
+    section div.our-infinity-slider{
+        display: inline-block;
+        animation: 35s slide-image infinite linear;
+    }
+    section div.our-infinity-slider img{
+        object-fit: cover;
+        height: 150px;
+        margin: 0 20px;
     }
 }
 @keyframes dominoEffect {
