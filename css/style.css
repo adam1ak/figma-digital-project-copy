@@ -869,6 +869,21 @@ main{
         font-size: 1em;
         row-gap: 2em;
     }
+    .popup{
+        width: 250px;
+    }
+    .popup h2{
+        font-size: 2em;
+    }
+    .popup p{
+        font-size: 1.5em;
+        text-align: justify;
+        margin: 20px 0;
+        line-height: 1.5em;
+    }
+    .popup a{
+        font-size: 1.5em;
+    }
 }
 @keyframes dominoEffect {
     0% {
