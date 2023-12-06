@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
             mainElement.classList.toggle('blur');
             body.style.overflow = 'hidden';
         },
-        750
+        100
     )
 });
 
