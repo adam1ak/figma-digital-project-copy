@@ -602,6 +602,7 @@ nav.mobile-navbar{
 .mobile-navbar.show {
     top: 0;
     z-index: 2;
+    right: 0;
     display: flex;
     height: 100%;
     width: 15em;
@@ -736,8 +737,9 @@ main{
         max-height: 70svh;
     }
     section div.about{
+        align-items: center;
         justify-content: center;
-        width: 65%;
+        width: 85%;
         min-height: 45svh;
     }
     section div.about-images{
@@ -815,6 +817,57 @@ main{
         height: 2.5rem;
         margin-bottom: 1em;
         font-size: 1.5em;
+    }
+
+
+    footer{
+        height: 30svh;
+    }
+    footer div.footer-logo img{
+        width: 3rem;
+    }
+    footer div.footer-logo-text{
+        padding-top: 0.5rem;
+    }
+    footer div.footer-logo-text i{
+        font-size: 1.3em;
+    }
+    footer div.footer-info{
+        row-gap: 2.5em;
+        margin-left: 2.5em;
+    }
+    footer div.footer-info i{
+        font-size: 1.5em;
+    }
+    
+    footer div.footer-contacts{
+        row-gap: 2.5em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+    footer div.footer-contacts i{
+        font-size: 1.5em;
+    }
+    footer div.footer-contacts ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+    footer div.footer-contacts ul li{
+        display: flex;
+        column-gap: 1em;
+    }
+    footer div.footer-socials{
+        row-gap: 1.5em;
+        margin-left: 2em;
+    }
+    footer div.footer-socials i:nth-of-type(1){
+        font-size: 1.5em;
+    }
+    footer div.footer-socials ul{
+        flex-direction: column;
+        font-size: 1em;
+        row-gap: 2em;
     }
 }
 @keyframes dominoEffect {
